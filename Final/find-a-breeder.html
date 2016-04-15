@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Find a Breeder</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="If you're interested in buying from a breeder, make sure they are a responsible breeder. Finding a responsible breeder will ensure that you have a happy healthy puppy.">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/print.css" media="print">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#main-menu').slicknav({prependTo:"#mobile-menu"});
+				
+				var stickyRibbonTop = $('aside nav').offset().top;
+				$(window).scroll(function(){
+					if( $(window).scrollTop() > stickyRibbonTop ) {
+						$('aside nav').css({position: 'fixed', top: '10px'});
+					} else {
+						$('aside nav').css({position: 'static', top: '0px'});
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<a href="index.html" title="Home"><img src="images/logo.jpg" alt="All About Norwegian Elkhounds logo"></a>
+			<h2>All About Norwegian Elkhounds</h2>
+			<h3>For all of your Norwegian Elkhound needs!</h3>
+		</header>
+		<nav id="mobile-menu"></nav>
+		<nav id="main-menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" class="drop-down">About Elkhounds</a>
+					<ul>
+						<li><a href="why-an-elkhound.html">Why an Elkhound?</a></li>
+						<li><a href="history.html">History</a></li>
+					</ul>
+				</li>
+				<li><a href="find-an-elkhound.html" class="drop-down">Find an Elkhound</a>
+					<ul>
+						<li><a href="adopt.html">Adopt</a></li>
+						<li class="current">Find a Breeder</li>
+					</ul>
+				</li>
+				<li><a href="care-guide.html" class="drop-down">Care Guide</a>
+					<ul>
+						<li><a href="preparations.html">Preparations</a></li>
+						<li><a href="training.html">Training</a></li>
+						<li><a href="grooming.html">Grooming</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section id="banner">
+				<div id="banner-content">
+					<h1>Find a Breeder</h1>
+					<p>If you're interested in buying from a breeder, make sure they are a responsible breeder. Finding a responsible breeder will ensure that you have a happy healthy puppy.</p>
+				</div>
+			</section>
+			<aside>
+				<nav>
+					<h3>Quick Navigation</h3>
+					<a href="javascript:window.print()" class="print">&gt;&gt; Print Page</a>
+					<a href="#tips">&gt;&gt; Tips for Finding a Breeder</a>
+					<a href="#find-a-breeder">&gt;&gt; How to Find a Breeder</a>
+					<a href="#">&gt;&gt; Back to Top</a>
+				</nav>
+			</aside>
+			<article>
+				<section id="tips">
+					<h2>Tips For Finding a Responsible Breeder</h2>
+					<ul>
+						<li>Ask to see the puppy's parents. Seeing the puppy's parents will allow you to get an idea of the temperament and appearance of your future puppy. If the breeder doesn't allow you to see the parents, be on the alert. The breeder might be trying to hide something from you such as the dogs may be aggressive.</li>
+						<li>Check out the premises. Things to ask yourself are:
+							<ul>
+								<li>Is the area clean?</li>
+								<li>Is the area odor-free?</li>
+								<li>Do the dogs/puppies look clean and well-fed?</li>
+								<li>Are the dogs lively and friendly?</li>
+								<li>Does the breeder seem to really care about their dogs?</li>
+								<li>Do the dogs react well to the breeder? To you?</li>
+							</ul>
+						</li>
+						<li>Ask about the health of the bloodline. Breeders should be aware of any possible genetic diseases and should also have proof of health screenings to show the bloodline does not have these diseases. If the breeder says the breed is 100% healthy, go elsewhere. No breed is 100% healthy and a good breeder will tell you how they are trying to prevent these diseases instead of trying to hide them.</li>
+						<li>Responsible breeders may ask you to sign a contract. This contract may include a guarantee that your puppy will be healthy. The contract may also state that if you are unable to keep or take care of the puppy, the breeder will reclaim it. I strongly recommend finding a breeder that has a health guarantee.</li>
+						<li>Most breeders will keep their puppy until 8-12 weeks old and also give the puppies their first shots.</li>
+						<li>Overall, breeders should be knowledgeable about the breed and should be willing to answer any questions you may have. A good breeder will also ask you questions to make sure their puppy is going to a good home.</li>
+					</ul>
+				</section>
+				<section id="find-a-breeder">
+					<h2>How to Find a Breeder</h2>
+					<ul>
+						<li><a href="https://www.apps.akc.org/apps/classified/search/landing_puppy.cfm?breed_code=414" target="_blank">AKC allows you to find registered breeders in your area</a></li>
+						<li><a href="http://neaa.net/breeders-directory.html" target="_blank">Norwegian Elkhound Association of America has a breeders directory</a></li>
+						<li>Try searching "Norwegian Elkhound breeders near me"</li>
+					</ul>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<section class="page-info">
+				<p class="image-credit">Image credit: [<a href="https://flic.kr/p/sp3t4C" title="Top Banner Image Credit">Banner</a>]</p>
+				<p>Last updated: <time datetime="2015-12-14">12/14/2015</time></p>
+			</section>
+			<section class="copyright clearfix">
+				<img class="loki" src="images/loki.jpg" alt="Loki, my Norwegian Elkhound mix">
+				<p>&copy; <script>document.write(new Date().getFullYear());</script> Joleen Schwellenbach</p>
+				<p>This website was created in memory of my Norwegian Elkhound mix, Loki.</p>
+				<p><i>December 26th, 2013 - February 23rd, 2015</i></p>
+			</section>
+		</footer>
+	</body>
+</html>

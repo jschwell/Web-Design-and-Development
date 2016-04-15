@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Grooming</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Norwegian Elkhounds do not take much to groom but you still need to apply some effort. Keeping your Elkhound groomed will not only keep your it happy, it will also allow you to catch possible health issues.">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/print.css" media="print">
+		<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#main-menu').slicknav({prependTo:"#mobile-menu"});
+				
+				var stickyRibbonTop = $('aside nav').offset().top;
+				$(window).scroll(function(){
+					if( $(window).scrollTop() > stickyRibbonTop ) {
+						$('aside nav').css({position: 'fixed', top: '10px'});
+					} else {
+						$('aside nav').css({position: 'static', top: '0px'});
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<a href="index.html" title="Home"><img src="images/logo.jpg" alt="All About Norwegian Elkhounds logo"></a>
+			<h2>All About Norwegian Elkhounds</h2>
+			<h3>For all of your Norwegian Elkhound needs!</h3>
+		</header>
+		<nav id="mobile-menu"></nav>
+		<nav id="main-menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html" class="drop-down">About Elkhounds</a>
+					<ul>
+						<li><a href="why-an-elkhound.html">Why an Elkhound?</a></li>
+						<li><a href="history.html">History</a></li>
+					</ul>
+				</li>
+				<li><a href="find-an-elkhound.html" class="drop-down">Find an Elkhound</a>
+					<ul>
+						<li><a href="adopt.html">Adopt</a></li>
+						<li><a href="find-a-breeder.html">Find a Breeder</a></li>
+					</ul>
+				</li>
+				<li><a href="care-guide.html" class="drop-down">Care Guide</a>
+					<ul>
+						<li><a href="preparations.html">Preparations</a></li>
+						<li><a href="training.html">Training</a></li>
+						<li class="current">Grooming</li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section id="banner">
+				<div id="banner-content">
+					<h1>Grooming</h1>
+				</div>
+			</section>
+			<aside>
+				<nav>
+					<h3>Quick Navigation</h3>
+					<a href="javascript:window.print()" class="print">&gt;&gt; Print Page</a>
+					<a href="#coat">&gt;&gt; Coat</a>
+					<a href="#nails">&gt;&gt; Nails</a>
+					<a href="#teeth">&gt;&gt; Teeth</a>
+					<a href="#ears">&gt;&gt; Ears</a>
+					<a href="#">&gt;&gt; Back to Top</a>
+				</nav>
+			</aside>
+			<article>
+				<p>When grooming, be on the lookout for sores, rashes, or signs of infection. If you take the time to do this, you can spot potential health problems early.</p>
+				<p>Also accustom your Elkhound to being examined. If you handle his paws and look inside his mouth, vet exams will go smoothly.</p>
+				<section id="coat">
+					<h2>Coat</h2>
+					<p>You will want to brush your Elkhound’s coat 2 to 3 times per week with a rake or comb. During shedding season (typically spring and fall) you will have to deal with tufts of fur everywhere. Daily brushings and warm baths will help remove loose hair so new hair can grow and keep excess hair under control.</p>
+					<p>There is no need to trim their coat and baths are rarely necessary since their coats are both water and dirt resistant. The breed also does not have the typical dog odor from their hair.</p>
+				</section>
+				<section id="nails">
+					<h2>Nails</h2>
+					<p>Nails should be trimmed every 4 to 6 weeks. If you hear the nails clicking on the floor, they are too long and need to be trimmed. Be careful when you trim their nails, however. Dog toenails have blood vessels in them and cutting too far can cause bleeding. If you want to cut your dog’s nails, your vet can give you tips and show you how to do it.</p>
+					<p>If you feel uncomfortable cutting your dog’s nails, you can just have a groomer or your vet cut their nails as needed.</p>
+				</section>
+				<section id="teeth">
+					<h2>Teeth</h2>
+					<p>Your Elkhound’s teeth should be brushed at least 2 to 3 times a week to remove tartar buildup. When brushing their teeth, do not use regular toothpaste. Regular toothpaste can often contain ingredients that are harmful to dogs. Ask your vet what toothpaste they would recommend.</p>
+				</section>
+				<section id="ears">
+					<h2>Ears</h2>
+					<p>You should keep your Elkhound’s ears clean to prevent infections. You should also check their ears weekly for redness or bad odor as that can indicate an infection.</p>
+					<p>You will want to wipe their ears out with a cotton ball dampened with a gentle, pH balanced ear cleaner. Do not insert anything into the ear canal, however. All you need to do is clean the outer ear. Once again, you can have your vet show you how to properly clean their ears.</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			<section class="page-info">
+				<p class="image-credit">Image credit: [<a href="https://flic.kr/p/sp3t4C" title="Top Banner Image Credit">Banner</a>]</p>
+				<p>Last updated: <time datetime="2015-12-14">12/14/2015</time></p>
+			</section>
+			<section class="copyright clearfix">
+				<img class="loki" src="images/loki.jpg" alt="Loki, my Norwegian Elkhound mix">
+				<p>&copy; <script>document.write(new Date().getFullYear());</script> Joleen Schwellenbach</p>
+				<p>This website was created in memory of my Norwegian Elkhound mix, Loki.</p>
+				<p><i>December 26th, 2013 - February 23rd, 2015</i></p>
+			</section>
+		</footer>
+	</body>
+</html>

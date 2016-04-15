@@ -1,0 +1,49 @@
+header, nav, aside, footer { display: none; }
+
+body {
+	width: auto;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#banner h1, main h1, main h2, main h3 { 
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	border-color: black;
+	text-shadow: none;
+}
+
+#banner { 
+	background-image: none;
+	margin: 0;
+	height: auto;
+}
+#banner-content { 
+	position: static;
+	width: auto;
+	color: black;
+	background: none;
+}
+
+main, article { padding: 0; }
+article { width: auto; }
+
+.featured img { display: none; }
+.featured h2 { padding: 0; }
+.featured h2, .featured p {
+	background-color: white;
+	color: black;
+	padding-left: 0;
+	padding-right: 0;
+}
+.featured a {
+	border-radius: 0;
+	border: none;
+	width: auto;
+	text-align: left;
+	display: block;
+}
+
+th, td { 
+	background-color: white; 
+	color: black!important;
+}
