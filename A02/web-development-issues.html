@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Web Development Issues</title>
+		<meta name="author" content="Joleen Schwellenbach">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		
+		<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+		
+		<link rel="stylesheet" href="styles/layout.css">
+		<link rel="stylesheet" href="styles/print.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		
+		<script>
+		$(document).ready(function(){
+	
+			$('ul.tabs li a').click(function(event){
+				var tab = $(this).attr("href");
+		
+				$('ul.tabs li a').removeClass('active');
+				$('.tab-content').removeClass('active');
+		
+				$(this).addClass("active");
+				$(tab).addClass('active');
+		
+			});
+			
+				var hash = $.trim( window.location.hash );
+			    if (hash) $('ul.tabs li a[href$="'+hash+'"]').trigger('click');
+			});
+		</script>
+	</head>
+
+	<body>
+		<header>
+				<h2><a href="index.html">Web Design and Development</a></h2>
+				<h3><a href="index.html">Joleen Schwellenbach</a></h3>
+		</header>
+		<nav class="clearfix">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="web-development-issues.html" class="active">Web Development Issues</a></li>
+				<li><a href="spunki.html">SPUNKI</a></li>
+				<li><a href="seo.html">SEO</a></li>
+				<li><a href="final.html">Final Project</a></li>
+			</ul>
+		</nav>
+		<main class="clearfix">
+			<h1>The Five Web Development Issues</h1>
+			<aside>
+				<ul class="tabs">
+					<li><a href="#usability" class="active">Users and usability</a></li>
+					<li><a href="#cross-browser">Cross-browser compatibility</a></li>
+					<li><a href="#accessibility">User accessibility</a></li>
+					<li><a href="#seo">Search engine optimization</a></li>
+					<li><a href="#responsive">Responsive Web Design</a></li>
+				</ul>
+			</aside>
+			<div class="column">
+				<section id="usability" class="tab-content active">
+					<h2>Users and usability</h2>
+					<p>When a user goes to a website, they want to be able to find information and complete tasks quickly and easily. They will often skim a page or click on links in order to find what they want. However, if a user cannot find what they want, they may get frustrated and leave the site. In order to prevent this frustrated user, a web developer should focus on making their website easy to use, which is also referred to as usability.</p>
+					<p>When developing a web page for usability, it is important to keep four guidelines in mind. The first guideline is to present all important information "above the fold." In other words, all important information should be visible on the screen when a page first loads. The second guideline is to group similar items together on a page. The number of groups should also be limited per page. The third guidline is to follow the common practices of a header. A header should include a logo, a tagline, a navigation bar, and a search bar if applicable. The final guideline is to follow common navigation practices. For example, a logo should go to the home page when clicked and a cart symbol should go to the shopping cart when clicked. Following these four guidelines will improve usability for all users.</p>
+				</section>
+				<section id="cross-browser" class="tab-content">
+					<h2>Cross-browser compatibility</h2>
+					<p>When it comes to browsing the internet, there are many internet browsers that someone can use. When developing a website, it is essential to make sure a website functions across all internet browsers.</p>
+                    <p>When a developer tests their website, they should test it on multiple browsers. The top five browsers to test on are Google Chrome, Opera, Mozilla Firefox, Apple Safari, and Internet Explorer. Out of those five browsers, Internet Explorer will most likely give the most problems as it has the lowest score for the HTML5 test rating. Internet Explorer also does not automatically update like the other four browsers so it is crucial to test older versions of IE.</p>
+                    <p>Internet Explorer has a Developer Tools window which will allow a developer to emulate previous versions of Internet Explorer. To do so, a developer will open their page in IE and press F12. This will bring up the Developer Tools window. Next, press Ctrl+8 to open the Emulation tab. From here, the developer can select the version of IE they would like to test.
+				</section>
+				<section id="accessibility" class="tab-content">
+					<h2>User accessibility</h2>
+					<p>A website will gain a variety of users. Because of this, it is important to make a website accessible for as many of these users as possible, especially for users with disabilities.</p>
+                    <p>There are many components that a developer must take into consideration when making a website accessible. As a general rule, a website should still be able to function if images, CSS, and JavaScript are disabled. Adaptations should also be made for those users with disabilites. For example, if an image is important to the page, a developer should add either a caption or provide an alternate text for users that use screen readers. For users with motor disabilities, a developer should also make sure that all content can be accessed through the keyboard. For users that are deaf, captions should be made available for all videos and audio.</p>
+                    <div class="side-content">
+                    	<h3>Useful Links</h3>
+                    	<ul>
+                    		<li><a href="http://www.webaim.org/intro" target="_blank">WebAIM</a></li>
+                    		<li><a href="http://www.w3.org/TR/WCAG" target="_blank">World Wide Web Consortium Accessibility Guidelines</a></li>
+                    		<li><a href="http://www.w3.org/TR/wai-aria" target="_blank">Web Accessibilty Initiative - Accessible Rich Internet Applications</a></li>
+                    	</ul>
+                	</div>
+				</section>
+				<section id="seo" class="tab-content">
+					<h2>Search engine optimization</h2>
+					<p>Search engine optimization (SEO) can help a website climb the ranks in search engines like Google, Bing, and Yahoo. While search engines use algorithms that are frequently updated to display search results, there are a few techniques a developer can use to improve a page's rank.
+                    <p>The title element is very important for SEO. Each page should have a unique short descriptive title that tells users and search engines what the topic of the page is.</p>
+                    <p>Another important element is the page's description meta tag. The meta tag gives search engines a short summary of the page's contents.</p>
+                    <p>There are many more techniques that can be found throughout the internet. Google also provides a SEO Starter Guide that covers some of these techniques.
+                    <div class="side-content">
+                    	<h3>Useful Links</h3>
+                    	<ul>
+                        	<li><a href="http://static.googleusercontent.com/media/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf" target="_blank">Google's SEO Starter Guide</a></li>
+                        </ul>
+                    </div>
+				</section>
+				<section id="responsive" class="tab-content">
+					<h2>Responsive Web Design</h2>
+					<p>As mobile phones and devices become more popular, responsive web design (RWD) has become a common practice among web developers. RWD refers to a website that adapts to different screen sizes by using CSS3 media queries, flexible images, and fluid grids. There are even many open-source frameworks that developers can use as a base for developing responsive websites. </p>
+					<div class="side-content">
+                    	<h3>Frameworks</h3>
+                    	<ul>
+                    		<li><a href="http://getskeleton.com/" target="_blank">Skeleton</a></li>
+                    		<li><a href="http://foundation.zurb.com/" target="_blank">Foundation</a></li>
+                    		<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                    	</ul>
+                	</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; Copyright by Joleen Schwellenbach</p>
+		</footer>
+	</body>
+</html>

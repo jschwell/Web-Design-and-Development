@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>SPUNKI</title>
+		<meta name="author" content="Joleen Schwellenbach">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+		
+		<link rel="stylesheet" href="styles/layout.css">
+		<link rel="stylesheet" href="styles/print.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		
+		<script>
+		$(document).ready(function(){
+	
+			$('ul.tabs li a').click(function(event){
+				var tab = $(this).attr("href");
+		
+				$('ul.tabs li a').removeClass('active');
+				$('.tab-content').removeClass('active');
+		
+				$(this).addClass("active");
+				$(tab).addClass('active');
+		
+			});
+			
+				var hash = $.trim( window.location.hash );
+			    if (hash) $('ul.tabs li a[href$="'+hash+'"]').trigger('click');
+			});
+		</script>
+	</head>
+
+	<body>
+		<header>
+				<h2><a href="index.html">Web Design and Development</a></h2>
+				<h3><a href="index.html">Joleen Schwellenbach</a></h3>
+		</header>
+		<nav class="clearfix">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="web-development-issues.html">Web Development Issues</a></li>
+				<li><a href="spunki.html" class="active">SPUNKI</a></li>
+				<li><a href="seo.html">SEO</a></li>
+				<li><a href="final.html">Final Project</a></li>
+			</ul>
+		</nav>
+		<main class="clearfix">
+			<h1>SPUNKI</h1>
+			<aside>
+				<ul class="tabs">
+					<li><a href="#surprising" class="active">Surprising</a></li>
+					<li><a href="#puzzling">Puzzling</a></li>
+					<li><a href="#useful">Useful</a></li>
+					<li><a href="#new">New</a></li>
+					<li><a href="#knew-it">Knew it already</a></li>
+					<li><a href="#interesting">Interesting</a></li>
+				</ul>
+			</aside>
+			<div class="column">
+				<section id="surprising" class="tab-content active">
+					<h2>What part or parts of the reading did you find surprising?</h2>
+					<p>I was surprised that the attribute value in HTML5 doesn't have to be enclosed in quotation marks as long as the value doesn't have spaces. I would assume that all coding would be made consistant. I plan to keep on using the quotation marks for all attributes as the books suggests.</p>
+				</section>
+				<section id="puzzling" class="tab-content">
+					<h2>What part or parts of the reading are still puzzling to you?</h2>
+					<p>The one part I found puzzling was Aptana's HTML5 validator. I used both W3C's validator and Aptana's validator as suggested by the book. While my web page had no errors or warnings on W3C's validator, I had two warnings on Aptana's validator. I noticed that the two warnings were actually not warnings at all but the information about the page. I understand that Aptana uses a different validator but I am confused as to why it would count the information as warnings.</p>
+				</section>
+				<section id="useful" class="tab-content">
+					<h2>What part or parts of the reading did you find useful enough to want to incorporate its concepts?</h2>
+					<p>One of the parts I found useful are the code comments. Comments will be useful for marking when a certain element starts and ends. They will also be helpful for testing layouts of an element by commenting out various code.</p>
+                    <p>Another part I found useful are the validation tools. The validation tools will be helpful in finding any errors such as a missing closing tag or missing quotation marks.</p>
+                    <p>I found the outline feature in Aptana to be the most useful. I would find it very helpful when trying to navigate through larger web pages. I can easily click the section I want versus scrolling through the entire document, only to miss the section I was looking for.</p>
+					<div class="side-content">
+                    	<h3>Useful Links</h3>
+                    	<ul>
+                    		<li><a href="http://validator.w3.org" target="_blank">HTML5 Validator</a></li>
+                    		<li><a href="http://jigsaw.w3.org/css-validator" target="_blank">CSS3 Validator</a></li>
+                    	</ul>
+                	</div>
+				</section>
+				<section id="new" class="tab-content">
+					<h2>What part or parts of the reading was totally new to you?</h2>
+					<p>I was unaware that whitespace adds to the size of the file. In the past I've used many spaces as a way of keeping my content organized. However, now that I know it will increase my file size, I will limit the amount of whitespace used.</p>
+                    <p>Another new concept was Aptana. I have used Dreamweaver for quite some time but my current version is out of date. I have been looking for a good software to replace it since Adobe is now doing subscriptions. While Aptana may not have as many features as Dreamweaver, it is free and has most of the features I use often.</p>
+				</section>
+				<section id="knew-it" class="tab-content">
+					<h2>What part or parts of the reading did you already know? Did the reading increase your knowledge on
+the topic?</h2>
+					<p>Since I started to teach myself code back in 2008, I knew a lot about this chapter. I have become quite familiar with the code structure and the basic layout of a web page. However, I did not know the formal names for certain parts of the code such as the document tree.</p>
+				</section>
+				<section id="interesting" class="tab-content">
+					<h2>What part or parts of the reading did you find interesting?</h2>
+					<p>I found it interesting that an id attribute is used to uniquely identify one element while a class attribute can be used on multiple elements. A few times when viewing a site's source code, I saw the code use the id attribute the same way as the class attribute. The website did not use the id to identify one element but many elements.</p>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; Copyright by Joleen Schwellenbach</p>
+		</footer>
+	</body>
+</html>
